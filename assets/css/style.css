@@ -109,8 +109,9 @@ footer {
     text-align: center;
     /* height: 30px; */
     margin:0;
-    padding-top: 0px;
-    padding:0;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    width: 285.5px;
 }
 
 .inLable {
@@ -118,33 +119,41 @@ footer {
     font-family: 'Libre Baskerville', serif;
     font-size: 25px;
 }
-
+ /* Make the position RELATIVE to their box (row & column they are in) */
 #lable1 {
-    position: absolute;
-    top: 420px;
-    left: 236px;
+    position: relative;
+    top: -110px;
+    left: 19px;
 }
 
 #lable2 {
-    position: absolute;
-    top: 420px;
-    left: 552px;
+    position: relative;
+    top: -110px;
+    left: 20px;
 }
 
 #lable3 {
-    position: absolute;
-    top: 745px;
-    left: 236px;
+    position: relative;
+    top: -110px;
+    left: 20px;
 }
 
 #lable4 {
-    position: absolute;
-    top: 745px;
-    left: 552px;
+    position: relative;
+    top: -110px;
+    left: 20px;
 }
 
 #lable5 {
-    position: absolute;
-    top: 1070px;
-    left: 236px;
+    position: relative;
+    top: -110px;
+    left: 20px;
+}
+
+/*  make the lables mobile responsive with media query */
+@media screen and (max-width: 960px) {
+    .lable {
+        width: 100%;
+        
+    }
 }
