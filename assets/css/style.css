@@ -156,4 +156,7 @@ footer {
         width: 100%;
         
     }
+    img {
+        margin-right: 20px;
+    }
 }
